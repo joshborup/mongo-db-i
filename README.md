@@ -10,7 +10,7 @@
 
 ### Summary
 
-In this step we will head over to https://mLab.com and create and account so we can host our database, we'll also want to download a tool to help us interact with out DB outside of the context of out application. Download `mongoDB compass community edition.
+In this step we will head over to https://mLab.com and create and account so we can host our database, we'll also want to download a tool to help us interact with our DB outside of the context of out application. Download `mongoDB compass community edition.
 
 ## Step 2
 
