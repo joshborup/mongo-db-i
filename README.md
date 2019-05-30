@@ -71,7 +71,7 @@ app.listen(SERVER_PORT, () => {
 
 Like any data store, we need to have a way to define how we would like to store our data, Mongo defines its data structures with a `Schema`, we can then call that `Schema` when we need it by creating a `model` with it.
 
-If you are coming from SQL you can think of a `Schema` as a `CREATE TABLE query`, the `model` is simply a way of querying a `Schema` when we would like to use it
+If you are coming from SQL you can think of a `Schema` as a `CREATE TABLE query`, the `model` is simply a way of querying a `Schema` when we would like to interact with it.
 
 Because mongoose is an ORM and allows us to use our language of choice, we can use the built in JavaScript types when setting up the schema
 
