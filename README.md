@@ -10,7 +10,7 @@
 
 ### Summary
 
-In this step we will head over to https://mLab.com and create and account so we can host our mongoDB, we'll also want to download a tool to help us interact with out DB outside of the context of out application. Download `mongoDB compass community edition.
+In this step we will head over to https://mLab.com and create and account so we can host our database, we'll also want to download a tool to help us interact with out DB outside of the context of out application. Download `mongoDB compass community edition.
 
 ## Step 2
 
@@ -79,7 +79,7 @@ Because mongoose is an ORM and allows us to use our language of choice, we can u
 
 - in `server/`, create a directory called schemas with a file called `customers.js`
 - open the `customers.js` file and require `mongoose` at the top
-- call `mongoose.Schema()` and pass in an object that will be a blueprint for how to store our data
+- create a variable called `customerSchema` and set it equal to `mongoose.Schema()`, pass in an object that will be a blueprint for how to store our data
   - the object should have the following properties
     - `name` with a type of `String`, and a `required` property set to true
       - in order to add multiple properties to a particular field, set the field name equal to an object and pass in the options your field should follow.
@@ -87,6 +87,7 @@ Because mongoose is an ORM and allows us to use our language of choice, we can u
     - `date_joined` with a type of `Date`
       - this should also have a default property set to the current date, `Date().toLocaleString()`
     - `description` with a type of `String`
+    - finally call `module.exports` and set it equal to `mongoose.model("customer", customerSchema);`
 
 ### Solution
 
