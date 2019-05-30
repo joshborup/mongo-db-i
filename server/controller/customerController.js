@@ -1,5 +1,4 @@
 // require the customer schema
-const Customer = require("../Schema/customer");
 
 module.exports = {
   getAllCustomers: (req, res) => {
